@@ -1,4 +1,4 @@
-/* איפוס הגדרות בסיסיות */
+/* עיצוב משוחזר וויקס - אסף לוי פסיכותרפיה */
 * {
     margin: 0;
     padding: 0;
@@ -7,266 +7,282 @@
 
 body {
     font-family: 'Assistant', sans-serif;
-    color: #333;
-    background-color: #fcfcfc;
-    line-height: 1.6;
+    background-color: #ffffff;
+    color: #3A3A3A;
+    line-height: 1.8;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
 }
 
-.container {
-    width: 90%;
-    max-width: 1100px;
+/* סרגל ניווט עליון של וויקס */
+.main-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #f0f0f0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container {
+    width: 980px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: #7B7B7B;
+}
+
+/* אזור תמונת הבלונים של וויקס */
+.hero-wix {
+    margin-top: 90px;
+    background-image: url('https://static.wixstatic.com/media/20e2ef648d704ff19299ebbb16913c1c.jpg/v1/fill/w_1920,h_700,al_c,q_85,usm_0.66_1.00_0.01/20e2ef648d704ff19299ebbb16913c1c.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top:0; left:0; width:100%; height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 300;
+    text-align: center;
+    max-width: 800px;
+    padding: 0 20px;
+    letter-spacing: 0.02em;
+}
+
+/* מבנה דפי תוכן */
+.page-content {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.content-section {
+    margin-bottom: 70px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 25px;
+    letter-spacing: 0.02em;
+}
+
+.lead-paragraph {
+    font-size: 18px;
+    color: #3A3A3A;
+    font-weight: 300;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.normal-paragraph {
+    font-size: 16px;
+    color: #3A3A3A;
+    font-weight: 300;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* סקשן אודות */
+.about-wix-section {
+    border-top: 1px solid #EAEAEA;
+    padding-top: 60px;
+    margin-top: 80px;
+}
+
+.about-wix-container {
+    max-width: 750px;
     margin: 0 auto;
 }
 
-/* סרגל ניווט תלוי */
-header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 5%;
-}
-
-.logo {
-    font-weight: 700;
-    font-size: 1.3rem;
-    color: #4a4a4a;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #666;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #9b5de5;
-}
-
-/* אזור Hero */
-.hero-section {
-    background: linear-gradient(135deg, #f3e5f5 0%, #e8eaf6 100%);
-    padding: 100px 0;
-    text-align: center;
-}
-
-.hero-content h1 {
-    font-size: 2.5rem;
+.about-wix-text p {
+    font-size: 16px;
     margin-bottom: 20px;
-    color: #2c3e50;
+    text-align: justify;
 }
 
-.hero-content h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 30px;
-    color: #555;
-}
-
-.btn-main {
-    display: inline-block;
-    padding: 12px 30px;
-    background-color: #9b5de5;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: 600;
-    box-shadow: 0 4px 10px rgba(155, 93, 229, 0.3);
-    transition: background 0.3s;
-}
-
-.btn-main:hover {
-    background-color: #7b2cbf;
-}
-
-/* קטעי טקסט ומבוא */
-.intro-section {
-    padding: 60px 0;
-    background-color: #fff;
-}
-
-.text-block {
-    max-width: 800px;
-}
-
-.text-block h3 {
-    font-size: 1.8rem;
+.invite-text {
+    font-size: 18px;
+    font-weight: 400;
     margin-top: 30px;
-    margin-bottom: 15px;
-    color: #2b2b2b;
 }
 
-.text-block p {
-    margin-bottom: 20px;
-    font-size: 1.1rem;
-    color: #4a4a4a;
+.invite-subtext {
+    font-size: 15px;
+    color: #575757;
 }
 
-/* אודות */
-.about-section {
-    padding: 60px 0;
-    background-color: #f7f9fa;
+.signature {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 25px;
+    color: #000;
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.about-text h3 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
-.about-text p {
-    margin-bottom: 15px;
-}
-
-.about-image-placeholder {
-    display: flex;
-    justify-content: center;
-}
-
-.img-box {
-    width: 300px;
-    height: 300px;
-    background-color: #ddd;
+/* סקשנים ייעודיים לעמודי חרדה ודיכאון (תמונות הדיו מוויקס) */
+.treatment-hero-anxiety {
+    margin-top: 90px;
+    background-image: url('https://static.wixstatic.com/media/nsplsh_38d8109d94944dce8424fa75225cb739~mv2.jpg/v1/fill/w_1920,h_500,al_c,q_85/nsplsh_38d8109d94944dce8424fa75225cb739~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    color: #666;
 }
 
-/* כרטיסי טיפול (גריד) */
-.treatments-section {
-    padding: 60px 0;
-    background-color: #fff;
+.treatment-hero-depression {
+    margin-top: 90px;
+    background-image: url('https://static.wixstatic.com/media/nsplsh_594246536b374944bd74677a336f3231~mv2.jpg/v1/fill/w_1920,h_500,al_c,q_85/nsplsh_594246536b374944bd74677a336f3231~mv2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.grid-2 {
+.treatment-title-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 60px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* אזור יצירת קשר ופוטר תחתון - רקע כהה של וויקס */
+.wix-footer-section {
+    background-color: #2F2F2F;
+    color: #FFFFFF;
+    padding: 60px 20px 30px 20px;
+    font-weight: 300;
+}
+
+.footer-grid {
+    max-width: 980px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-.card {
-    background-color: #fbfbfb;
-    border-radius: 12px;
-    padding: 40px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-    border-top: 5px solid #9b5de5;
-}
-
-.card.depression {
-    border-top-color: #f15bb5;
-}
-
-.card h3 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-
-.card h4 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.btn-secondary {
-    display: inline-block;
-    margin-top: 20px;
-    color: #9b5de5;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-/* צור קשר */
-.contact-section {
-    padding: 60px 0;
-    background-color: #2c3e50;
-    color: #fff;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.5fr;
     gap: 40px;
 }
 
-.contact-info h3, .contact-form-container h3 {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-}
-
-.contact-info p {
+.footer-column h3 {
+    font-size: 18px;
+    font-weight: 400;
     margin-bottom: 15px;
+    letter-spacing: 0.05em;
 }
 
-.contact-form {
-    display: flex;
-    flex-direction: column;
+.footer-column p {
+    font-size: 14px;
+    color: #E2E2E2;
+    margin-bottom: 5px;
 }
 
-.contact-form input, .contact-form-container textarea {
-    padding: 12px;
-    margin-bottom: 15px;
-    border: none;
-    border-radius: 4px;
-    font-family: inherit;
+/* טופס וויקס משוחזר */
+.wix-form .form-group {
+    margin-bottom: 12px;
 }
 
-.btn-submit {
-    padding: 12px;
-    background-color: #00bbf9;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-weight: 600;
+.wix-form input, .wix-form textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+}
+
+.wix-form input::placeholder, .wix-form textarea::placeholder {
+    color: #CCCCCC;
+}
+
+.wix-form input:focus, .wix-form textarea:focus {
+    outline: none;
+    border-color: #AEAEAE;
+}
+
+.wix-submit-btn {
+    background-color: #FFFFFF;
+    color: #2F2F2F;
+    border: 1px solid #FFFFFF;
+    padding: 10px 35px;
+    font-family: 'Assistant', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: background 0.2s, color 0.2s;
 }
 
-.btn-submit:hover {
-    background-color: #0096c7;
+.wix-submit-btn:hover {
+    background-color: transparent;
+    color: #FFFFFF;
 }
 
-/* פוטר */
-footer {
+.copyrights {
+    max-width: 980px;
+    margin: 40px auto 0 auto;
+    border-top: 1px solid #444444;
+    padding-top: 20px;
+    font-size: 12px;
+    color: #999999;
     text-align: center;
-    padding: 20px;
-    background-color: #1a252f;
-    color: #7f8c8d;
-    font-size: 0.9rem;
 }
 
-/* התאמה למובייל */
+/* התאמה מלאה למובייל */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    }
-    .nav-links {
-        margin-top: 15px;
-    }
-    .about-grid, .grid-2, .contact-grid {
-        grid-template-columns: 1fr;
-    }
+    .main-header { height: auto; padding: 15px 0; }
+    .nav-menu { gap: 15px; flex-wrap: wrap; justify-content: center; }
+    .hero-wix { margin-top: 110px; height: 350px; }
+    .hero-title { font-size: 24px; }
+    .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+    .treatment-title-box { padding: 15px 30px; font-size: 24px; }
 }
