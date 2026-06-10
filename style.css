@@ -1,0 +1,281 @@
+/* הגדרות בסיס */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Assistant', sans-serif;
+    color: #000;
+    background-color: #FAFAFA;
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+/* סרגל ניווט */
+.navbar {
+    background-color: #F7DF8D;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #533773;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #24DC9D;
+}
+
+/* אזור Hero */
+.hero {
+    background-image: url('https://static.wixstatic.com/media/20e2ef648d704ff19299ebbb16913c1c.jpg/v1/fill/w_1920,h_700,al_c,q_85/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0,0,0,0.3);
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+/* תוכן ראשי */
+.main-content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.text-section {
+    margin-bottom: 50px;
+}
+
+.text-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    letter-spacing: 0.1em;
+}
+
+.text-section p {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* אזור אודות */
+.about-section {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    margin-bottom: 60px;
+}
+
+.about-section h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 0.1em;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.signature {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+    color: #24DC9D;
+}
+
+/* גריד טיפולים */
+.treatments-section {
+    margin-bottom: 80px;
+}
+
+.treatments-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.treatment-card {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.treatment-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.depression-img {
+    background-image: url('https://static.wixstatic.com/media/2a954b_9c00fe35a6c84c578391c51f9d4a9e64~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80/yellow.jpg');
+}
+
+.anxiety-img {
+    background-image: url('https://static.wixstatic.com/media/2a954b_5f941053677f44208bc990b4a82c8837~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80/purple.jpg');
+}
+
+.treatment-content {
+    padding: 30px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.treatment-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #533773;
+}
+
+.treatment-content p {
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.action-btn {
+    align-self: flex-start;
+    background-color: #24DC9D;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #1cb581;
+}
+
+/* פוטר וצור קשר */
+.site-footer {
+    background-color: #232323;
+    color: #fff;
+    padding: 60px 20px 20px;
+}
+
+.footer-container {
+    max-width: 980px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 40px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #F7DF8D;
+    margin-bottom: 15px;
+    letter-spacing: 0.1em;
+}
+
+.footer-col p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* טופס */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #474747;
+    background-color: transparent;
+    color: #fff;
+    font-family: inherit;
+    border-radius: 4px;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+.submit-btn {
+    background-color: #24DC9D;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #1cb581;
+}
+
+.copyrights {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #888;
+}
+
+/* התאמה לנייד */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .treatments-grid, .footer-container {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 {
+        font-size: 24px;
+    }
+}
