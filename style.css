@@ -1,0 +1,272 @@
+/* איפוס הגדרות בסיסיות */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Assistant', sans-serif;
+    color: #333;
+    background-color: #fcfcfc;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* סרגל ניווט תלוי */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #4a4a4a;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #9b5de5;
+}
+
+/* אזור Hero */
+.hero-section {
+    background: linear-gradient(135deg, #f3e5f5 0%, #e8eaf6 100%);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.btn-main {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #9b5de5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(155, 93, 229, 0.3);
+    transition: background 0.3s;
+}
+
+.btn-main:hover {
+    background-color: #7b2cbf;
+}
+
+/* קטעי טקסט ומבוא */
+.intro-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.text-block {
+    max-width: 800px;
+}
+
+.text-block h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2b2b2b;
+}
+
+.text-block p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #4a4a4a;
+}
+
+/* אודות */
+.about-section {
+    padding: 60px 0;
+    background-color: #f7f9fa;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-image-placeholder {
+    display: flex;
+    justify-content: center;
+}
+
+.img-box {
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #666;
+}
+
+/* כרטיסי טיפול (גריד) */
+.treatments-section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.card {
+    background-color: #fbfbfb;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    border-top: 5px solid #9b5de5;
+}
+
+.card.depression {
+    border-top-color: #f15bb5;
+}
+
+.card h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-secondary {
+    display: inline-block;
+    margin-top: 20px;
+    color: #9b5de5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* צור קשר */
+.contact-section {
+    padding: 60px 0;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contact-info h3, .contact-form-container h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form-container textarea {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.btn-submit {
+    padding: 12px;
+    background-color: #00bbf9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0096c7;
+}
+
+/* פוטר */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a252f;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* התאמה למובייל */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .nav-links {
+        margin-top: 15px;
+    }
+    .about-grid, .grid-2, .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
